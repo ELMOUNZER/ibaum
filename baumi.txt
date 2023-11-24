@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/gpio.h"
+#include "DHT.h"
+
+#define DHT_GPIO_PIN 4
+#define RELAY_GPIO_PIN 25  // Replace with the actual GPIO pin connected to the relay
+#define HUMIDITY_THRESHOLD 70.0
+#define HYSTERESIS 5.0  // Adjust this value as needed
+#define PUMP_DURATION_SECONDS 5
+
+void controlWaterPump(bool turnOn) {
+    gpio_set_level(RELAY_GPIO_PIN, turnOn ? 1 : 0);
+}
+
+void dht_task(void *pvParameter) {
+    bool pumpActive = false;
+
+    while (1) {
+        int ret = readDHT();
+
+        if (ret == DHT_OK) {
+            float humidity = getHumidity();
+            printf("Humidity: %.2f%%\n", humidity);
+
+            if (humidity > HUMIDITY_THRESHOLD + HYSTERESIS && !pumpActive) {
+                // Turn on the water pump
+                controlWaterPump(true);
+
+                // Set the flag to indicate the pump is active
+                pumpActive = true;
+
+                // Wait for the specified duration
+                vTaskDelay(PUMP_DURATION_SECONDS * 1000 / portTICK_PERIOD_MS);
+
+                // Turn off the water pump after the specified duration
+                controlWaterPump(false);
+            } else if (humidity <= HUMIDITY_THRESHOLD - HYSTERESIS) {
+                // Reset the flag when humidity falls below the lower threshold
+                pumpActive = false;
+            }
+        } else {
+            errorHandler(ret);
+        }
+
+        // Wait for the next iteration
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
+    }
+}
+
+void app_main() {
+    setDHTgpio(DHT_GPIO_PIN);
+
+    // Setup the relay pin as an output
+    gpio_config_t io_conf = {
+        .pin_bit_mask = (1ULL << RELAY_GPIO_PIN),
+        .mode = GPIO_MODE_OUTPUT,
+    };
+    gpio_config(&io_conf);
+
+    xTaskCreate(&dht_task, "dht_task", 2048, NULL, 5, NULL);
+}
