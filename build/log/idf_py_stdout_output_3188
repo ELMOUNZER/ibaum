@@ -1,0 +1,87 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  8 2023 01:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a358h ( 41816) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a380 vaddr=3ffb0000 size=02240h (  8768) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c5c8 vaddr=40080000 size=03a50h ( 14928) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15320h ( 86816) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=00035348 vaddr=40083a50 size=08cc0h ( 36032) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     ibaum[0m
+[0;32mI (211) cpu_start: App version:      039a140-dirty[0m
+[0;32mI (216) cpu_start: Compile time:     Dec  8 2023 01:20:43[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  9a0bdaeff...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2B08 len 0002D4F8 (181 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008C710 len 000138F0 (78 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (309) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (318) main_task: Started on CPU0[0m
+[0;32mI (328) main_task: Calling app_main()[0m
+[0;32mI (328) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (328) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (338) main_task: Returned from app_main()[0m
+Raw ADC Value: 814
+Soil Moisture: 74%
+Raw ADC Value: 1651
+Soil Moisture: 32%
+The soil is dry. Pumping water...
+Water pump is off.
+Raw ADC Value: 1821
+Soil Moisture: 23%
+Raw ADC Value: 1824
+Soil Moisture: 23%
+Raw ADC Value: 576
+Soil Moisture: 86%
+Raw ADC Value: 507
+Soil Moisture: 89%
+Raw ADC Value: 508
+Soil Moisture: 89%
+Raw ADC Value: 537
+Soil Moisture: 88%
+Raw ADC Value: 484
+Soil Moisture: 90%
+Raw ADC Value: 497
+Soil Moisture: 90%
+Raw ADC Value: 1360
+Soil Moisture: 47%
+The soil is dry. Pumping water...
+Water pump is off.
+Raw ADC Value: 1456
+Soil Moisture: 42%
