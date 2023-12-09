@@ -1,0 +1,151 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  9 2023 04:29:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c014h ( 49172) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001c03c vaddr=3ffb0000 size=02670h (  9840) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001e6b4 vaddr=40080000 size=01964h (  6500) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17848h ( 96328) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00037870 vaddr=40081964 size=0d0f8h ( 53496) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (196) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     ibaum[0m
+[0;32mI (224) cpu_start: App version:      293893e-dirty[0m
+[0;32mI (230) cpu_start: Compile time:     Dec  9 2023 04:27:03[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  f9c78aeec...[0m
+[0;32mI (241) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2F50 len 0002D0B0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008EA5C len 000115A4 (69 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (333) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (402) SSD1306: OLED configured successfully[0m
+[0;32mI (3502) main_task: Returned from app_main()[0m
+Raw ADC Value: 1117
+Soil Moisture: 59%
+Communication task received notification.
+Raw ADC Value: 848
+Soil Moisture: 72%
+Communication task received notification.
+Raw ADC Value: 816
+Soil Moisture: 74%
+Communication task received notification.
+Raw ADC Value: 794
+Soil Moisture: 75%
+Communication task received notification.
+Raw ADC Value: 2242
+Soil Moisture: 2%
+The soil is dry. Pumping water...
+Water pump is off.
+Communication task received notification.
+Raw ADC Value: 2288
+Soil Moisture: 0%
+Communication task received notification.
+Raw ADC Value: 2322
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2323
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2320
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2323
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2320
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2321
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2321
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2432
+Soil Moisture: -6%
+Communication task received notification.
+Raw ADC Value: 2320
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 2319
+Soil Moisture: 0%
+Communication task received notification.
+Raw ADC Value: 2320
+Soil Moisture: -1%
+Communication task received notification.
+Raw ADC Value: 1959
+Soil Moisture: 17%
+Communication task received notification.
+Raw ADC Value: 1771
+Soil Moisture: 26%
+Communication task received notification.
+Raw ADC Value: 1648
+Soil Moisture: 32%
+Communication task received notification.
+Raw ADC Value: 1124
+Soil Moisture: 58%
+Communication task received notification.
+Raw ADC Value: 938
+Soil Moisture: 68%
+Communication task received notification.
+Raw ADC Value: 912
+Soil Moisture: 69%
+Communication task received notification.
+Raw ADC Value: 909
+Soil Moisture: 69%
+Communication task received notification.
+Raw ADC Value: 886
+Soil Moisture: 70%
+Communication task received notification.
+Raw ADC Value: 883
+Soil Moisture: 70%
+Communication task received notification.
+Raw ADC Value: 2303
+Soil Moisture: 0%
+The soil is dry. Pumping water...
+Water pump is off.
+Communication task received notification.
+Raw ADC Value: 2317
+Soil Moisture: 0%
+Communication task received notification.
+Raw ADC Value: 2320
+Soil Moisture: -1%
+Communication task received notification.

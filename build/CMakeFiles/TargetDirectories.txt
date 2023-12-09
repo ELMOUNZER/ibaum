@@ -678,3 +678,10 @@ C:/Users/Elmou/Desktop/ibaum/build/esp-idf/main/CMakeFiles/list_install_componen
 C:/Users/Elmou/Desktop/ibaum/build/esp-idf/main/CMakeFiles/install.dir
 C:/Users/Elmou/Desktop/ibaum/build/esp-idf/main/CMakeFiles/install/local.dir
 C:/Users/Elmou/Desktop/ibaum/build/esp-idf/main/CMakeFiles/install/strip.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/__idf_components.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/edit_cache.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/rebuild_cache.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/list_install_components.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/install.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/install/local.dir
+C:/Users/Elmou/Desktop/ibaum/build/esp-idf/components/CMakeFiles/install/strip.dir

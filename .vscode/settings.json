@@ -4,5 +4,12 @@
     "idf.flashType": "UART",
     "idf.openOcdConfigs": [
         "board/esp32-wrover-kit-3.3v.cfg"
-    ]
+    ],
+    "files.associations": {
+        "*.scss": "scss",
+        "*.tcc": "c",
+        "map": "c",
+        "format": "c",
+        "system_error": "c"
+    }
 }

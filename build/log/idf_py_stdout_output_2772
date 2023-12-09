@@ -1,0 +1,241 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  9 2023 04:29:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c044h ( 49220) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001c06c vaddr=3ffb0000 size=02670h (  9840) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001e6e4 vaddr=40080000 size=01934h (  6452) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1788ch ( 96396) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000378b4 vaddr=40081934 size=0d128h ( 53544) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     ibaum[0m
+[0;32mI (225) cpu_start: App version:      293893e-dirty[0m
+[0;32mI (230) cpu_start: Compile time:     Dec  9 2023 04:27:03[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  750bd8751...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2F50 len 0002D0B0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008EA5C len 000115A4 (69 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (323) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (333) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (422) SSD1306: OLED configured successfully[0m
+[0;32mI (3522) main_task: Returned from app_main()[0m
+Raw ADC Value: 2098
+Soil Moisture: 10%
+The soil is dry. Pumping water...
+Water pump is off.
+Communication task received notification.
+Raw ADC Value: 2081
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2067
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2081
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2069
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2099
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2086
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2069
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2054
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2094
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2083
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2084
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2057
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2075
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2075
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2061
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2079
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2092
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2042
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2080
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2045
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2067
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2091
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2063
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2093
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2064
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2037
+Soil Moisture: 13%
+Communication task received notification.
+Raw ADC Value: 2150
+Soil Moisture: 7%
+Communication task received notification.
+Raw ADC Value: 2064
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2080
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2092
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2047
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2094
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2084
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2123
+Soil Moisture: 8%
+Communication task received notification.
+Raw ADC Value: 2066
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2044
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2047
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2053
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2077
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2079
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2078
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2053
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2047
+Soil Moisture: 12%
+Communication task received notification.
+Raw ADC Value: 2015
+Soil Moisture: 14%
+Communication task received notification.
+Raw ADC Value: 2015
+Soil Moisture: 14%
+Communication task received notification.
+Raw ADC Value: 2064
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2075
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2115
+Soil Moisture: 9%
+Communication task received notification.
+Raw ADC Value: 2088
+Soil Moisture: 10%
+Communication task received notification.
+Raw ADC Value: 2075
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2073
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2068
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2073
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2071
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2080
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2064
+Soil Moisture: 11%
+Communication task received notification.
+Raw ADC Value: 2015
+Soil Moisture: 14%
+Communication task received notification.
+Raw ADC Value: 2093
+Soil Moisture: 10%
+Communication task received notification.

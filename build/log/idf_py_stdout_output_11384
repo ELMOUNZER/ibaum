@@ -1,0 +1,93 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/Elmou/Desktop/ibaum/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "ibaum" version: 293893e-dirty
+-- Adding linker script C:/Users/Elmou/Desktop/ibaum/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/Elmou/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock components console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_gpio esp_driver_gptimer esp_driver_mcpwm esp_driver_pcnt esp_driver_sdmmc esp_driver_spi esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/Elmou/esp/esp-idf/components/app_trace C:/Users/Elmou/esp/esp-idf/components/app_update C:/Users/Elmou/esp/esp-idf/components/bootloader C:/Users/Elmou/esp/esp-idf/components/bootloader_support C:/Users/Elmou/esp/esp-idf/components/bt C:/Users/Elmou/esp/esp-idf/components/cmock C:/Users/Elmou/Desktop/ibaum/components C:/Users/Elmou/esp/esp-idf/components/console C:/Users/Elmou/esp/esp-idf/components/cxx C:/Users/Elmou/esp/esp-idf/components/driver C:/Users/Elmou/esp/esp-idf/components/efuse C:/Users/Elmou/esp/esp-idf/components/esp-tls C:/Users/Elmou/esp/esp-idf/components/esp_adc C:/Users/Elmou/esp/esp-idf/components/esp_app_format C:/Users/Elmou/esp/esp-idf/components/esp_bootloader_format C:/Users/Elmou/esp/esp-idf/components/esp_coex C:/Users/Elmou/esp/esp-idf/components/esp_common C:/Users/Elmou/esp/esp-idf/components/esp_driver_gpio C:/Users/Elmou/esp/esp-idf/components/esp_driver_gptimer C:/Users/Elmou/esp/esp-idf/components/esp_driver_mcpwm C:/Users/Elmou/esp/esp-idf/components/esp_driver_pcnt C:/Users/Elmou/esp/esp-idf/components/esp_driver_sdmmc C:/Users/Elmou/esp/esp-idf/components/esp_driver_spi C:/Users/Elmou/esp/esp-idf/components/esp_eth C:/Users/Elmou/esp/esp-idf/components/esp_event C:/Users/Elmou/esp/esp-idf/components/esp_gdbstub C:/Users/Elmou/esp/esp-idf/components/esp_hid C:/Users/Elmou/esp/esp-idf/components/esp_http_client C:/Users/Elmou/esp/esp-idf/components/esp_http_server C:/Users/Elmou/esp/esp-idf/components/esp_https_ota C:/Users/Elmou/esp/esp-idf/components/esp_https_server C:/Users/Elmou/esp/esp-idf/components/esp_hw_support C:/Users/Elmou/esp/esp-idf/components/esp_lcd C:/Users/Elmou/esp/esp-idf/components/esp_local_ctrl C:/Users/Elmou/esp/esp-idf/components/esp_mm C:/Users/Elmou/esp/esp-idf/components/esp_netif C:/Users/Elmou/esp/esp-idf/components/esp_netif_stack C:/Users/Elmou/esp/esp-idf/components/esp_partition C:/Users/Elmou/esp/esp-idf/components/esp_phy C:/Users/Elmou/esp/esp-idf/components/esp_pm C:/Users/Elmou/esp/esp-idf/components/esp_psram C:/Users/Elmou/esp/esp-idf/components/esp_ringbuf C:/Users/Elmou/esp/esp-idf/components/esp_rom C:/Users/Elmou/esp/esp-idf/components/esp_system C:/Users/Elmou/esp/esp-idf/components/esp_timer C:/Users/Elmou/esp/esp-idf/components/esp_wifi C:/Users/Elmou/esp/esp-idf/components/espcoredump C:/Users/Elmou/esp/esp-idf/components/esptool_py C:/Users/Elmou/esp/esp-idf/components/fatfs C:/Users/Elmou/esp/esp-idf/components/freertos C:/Users/Elmou/esp/esp-idf/components/hal C:/Users/Elmou/esp/esp-idf/components/heap C:/Users/Elmou/esp/esp-idf/components/http_parser C:/Users/Elmou/esp/esp-idf/components/idf_test C:/Users/Elmou/esp/esp-idf/components/ieee802154 C:/Users/Elmou/esp/esp-idf/components/json C:/Users/Elmou/esp/esp-idf/components/log C:/Users/Elmou/esp/esp-idf/components/lwip C:/Users/Elmou/Desktop/ibaum/main C:/Users/Elmou/esp/esp-idf/components/mbedtls C:/Users/Elmou/esp/esp-idf/components/mqtt C:/Users/Elmou/esp/esp-idf/components/newlib C:/Users/Elmou/esp/esp-idf/components/nvs_flash C:/Users/Elmou/esp/esp-idf/components/nvs_sec_provider C:/Users/Elmou/esp/esp-idf/components/openthread C:/Users/Elmou/esp/esp-idf/components/partition_table C:/Users/Elmou/esp/esp-idf/components/perfmon C:/Users/Elmou/esp/esp-idf/components/protobuf-c C:/Users/Elmou/esp/esp-idf/components/protocomm C:/Users/Elmou/esp/esp-idf/components/pthread C:/Users/Elmou/esp/esp-idf/components/sdmmc C:/Users/Elmou/esp/esp-idf/components/soc C:/Users/Elmou/esp/esp-idf/components/spi_flash C:/Users/Elmou/esp/esp-idf/components/spiffs C:/Users/Elmou/esp/esp-idf/components/tcp_transport C:/Users/Elmou/esp/esp-idf/components/ulp C:/Users/Elmou/esp/esp-idf/components/unity C:/Users/Elmou/esp/esp-idf/components/usb C:/Users/Elmou/esp/esp-idf/components/vfs C:/Users/Elmou/esp/esp-idf/components/wear_levelling C:/Users/Elmou/esp/esp-idf/components/wifi_provisioning C:/Users/Elmou/esp/esp-idf/components/wpa_supplicant C:/Users/Elmou/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Elmou/Desktop/ibaum/build
+[0/1] Re-running CMake...
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Elmou\Desktop\ibaum\build\bootloader\esp-idf\esptool_py && C:\Users\Elmou\esp\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Elmou/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Elmou/Desktop/ibaum/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ibaum.c.obj
+In file included from C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:8:
+C:/Users/Elmou/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/Users/Elmou/Desktop/ibaum/main/ibaum.c: In function 'getSoilMoisture':
+C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:54:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   54 |     adc1_config_channel_atten(SOIL_SENSOR_ADC_CHANNEL, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/Elmou/esp/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Users/Elmou/esp/esp-idf/components/driver/deprecated/driver/adc.h:15:
+C:/Users/Elmou/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+In file included from C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:12:
+C:/Users/Elmou/Desktop/ibaum/components/font8x8_basic.h: At top level:
+C:/Users/Elmou/Desktop/ibaum/components/font8x8_basic.h:41:16: warning: 'font8x8_basic_tr' defined but not used [-Wunused-variable]
+   41 | static uint8_t font8x8_basic_tr[128][8] = {
+      |                ^~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable ibaum.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/Elmou/Desktop/ibaum/build/ibaum.bin
+[7/8] cmd.exe /C "cd /D C:\Users\Elmou\Desktop\ibaum\build\esp-idf\esptool_py && C:\Users\Elmou\esp\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Elmou/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Elmou/Desktop/ibaum/build/partition_table/partition-table.bin C:/Users/Elmou/Desktop/ibaum/build/ibaum.bin"
+ibaum.bin binary size 0x38070 bytes. Smallest app partition is 0x100000 bytes. 0xc7f90 bytes (78%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\Elmou\esp\esp-idf\components\esptool_py && C:\Users\Elmou\esp\tools\cmake\3.24.0\bin\cmake.exe -esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 ibaum.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 08:3a:f2:ba:43:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00048fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16335...
+Writing at 0x00001000... (100 %)
+Wrote 26640 bytes (16335 compressed) at 0x00001000 in 0.8 seconds (effective 266.5 kbit/s)...
+Hash of data verified.
+Compressed 229488 bytes to 117365...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001c674... (25 %)
+Writing at 0x000238c8... (37 %)
+Writing at 0x00029964... (50 %)
+Writing at 0x00031a0f... (62 %)
+Writing at 0x0003adb1... (75 %)
+Writing at 0x00040942... (87 %)
+Writing at 0x00046e8e... (100 %)
+Wrote 229488 bytes (117365 compressed) at 0x00010000 in 2.8 seconds (effective 649.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 373.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+D IDF_PATH=C:/Users/Elmou/esp/esp-idf -D SERIAL_TOOL=C:/Users/Elmou/esp/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/Elmou/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Elmou/Desktop/ibaum/build -P C:/Users/Elmou/esp/esp-idf/components/esptool_py/run_serial_tool.cmake"
