@@ -1,0 +1,241 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  9 2023 22:03:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24c60h (150624) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00034c88 vaddr=3ffb0000 size=03bf8h ( 15352) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038888 vaddr=40080000 size=07790h ( 30608) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b244h (569924) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb26c vaddr=40087790 size=0ee90h ( 61072) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (416) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) cpu_start: Application information:[0m
+[0;32mI (428) cpu_start: Project name:     ibaum[0m
+[0;32mI (433) cpu_start: App version:      293893e-dirty[0m
+[0;32mI (438) cpu_start: Compile time:     Dec  9 2023 22:02:20[0m
+[0;32mI (444) cpu_start: ELF file SHA256:  1e643e167...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB7D28 len 000282D8 (160 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40096620 len 000099E0 (38 KiB): IRAM[0m
+[0;32mI (510) spi_flash: detected chip: generic[0m
+[0;32mI (513) spi_flash: flash io: dio[0m
+[0;33mW (517) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (550) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (550) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (610) wifi:wifi driver task: 3ffbfd9c, prio:23, stack:6656, core=0
+I (630) wifi:wifi firmware version: 639ccf2
+I (630) wifi:wifi certification version: v7.0
+I (630) wifi:config NVS flash: enabled
+I (630) wifi:config nano formating: disabled
+I (630) wifi:Init data frame dynamic rx buffer num: 32
+I (640) wifi:Init static rx mgmt buffer num: 5
+I (640) wifi:Init management short buffer num: 32
+I (640) wifi:Init dynamic tx buffer num: 32
+I (650) wifi:Init static rx buffer size: 1600
+I (650) wifi:Init static rx buffer num: 10
+I (660) wifi:Init dynamic rx buffer num: 32
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (680) wifi_init: tcp tx win: 5760[0m
+[0;32mI (680) wifi_init: tcp rx win: 5760[0m
+[0;32mI (680) wifi_init: tcp mss: 1440[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (720) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (810) wifi:mode : sta (08:3a:f2:ba:43:e0)
+I (810) wifi:enable tsf
+WIFI CONNECTING....
+wifi_init_softap finished. SSID:O2  password:T7YUCVBACHPA2YA6[0;32mI (820) main_task: Returned from app_main()[0m
+I (900) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (900) wifi:state: init -> auth (b0)
+I (900) wifi:state: auth -> assoc (0)
+I (900) wifi:Association refused temporarily, comeback time 1201 (TUs)
+I (2140) wifi:state: assoc -> assoc (0)
+I (2140) wifi:state: assoc -> init (6c0)
+I (2140) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+WiFi lost connection
+Retrying to Connect...
+Raw ADC Value: 453
+Soil Moisture: 92%
+WiFi lost connection
+Retrying to Connect...
+I (4560) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (4560) wifi:state: init -> auth (b0)
+I (4570) wifi:state: auth -> assoc (0)
+I (4570) wifi:state: assoc -> run (10)
+I (4590) wifi:connected with O2, aid = 33, channel 10, BW20, bssid = b0:ea:bc:6c:8c:0b
+I (4590) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (4600) wifi:pm start, type: 1
+
+I (4600) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+WiFi CONNECTED
+I (4680) wifi:dp: 5, bi: 102400, li: 5, scale listen interval from 307200 us to 512000 us
+I (4680) wifi:AP's beacon interval = 102400 us, DTIM period = 5
+Raw ADC Value: 469
+Soil Moisture: 91%
+[0;32mI (7100) esp_netif_handlers: sta ip: 192.168.1.165, mask: 255.255.255.0, gw: 192.168.1.1[0m
+Wifi got IP...
+
+Raw ADC Value: 471
+Soil Moisture: 91%
+Raw ADC Value: 470
+Soil Moisture: 91%
+Raw ADC Value: 458
+Soil Moisture: 92%
+Raw ADC Value: 462
+Soil Moisture: 91%
+Raw ADC Value: 462
+Soil Moisture: 91%
+Raw ADC Value: 464
+Soil Moisture: 91%
+Raw ADC Value: 466
+Soil Moisture: 91%
+Raw ADC Value: 462
+Soil Moisture: 91%
+Raw ADC Value: 477
+Soil Moisture: 91%
+Raw ADC Value: 479
+Soil Moisture: 91%
+Raw ADC Value: 467
+Soil Moisture: 91%
+Raw ADC Value: 469
+Soil Moisture: 91%
+Raw ADC Value: 476
+Soil Moisture: 91%
+I (47260) wifi:<ba-add>idx:0 (ifx:0, b0:ea:bc:6c:8c:0b), tid:0, ssn:12, winSize:64
+Raw ADC Value: 462
+Soil Moisture: 91%
+[0;33mW (49750) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (49750) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 464
+Soil Moisture: 91%
+Raw ADC Value: 464
+Soil Moisture: 91%
+Raw ADC Value: 469
+Soil Moisture: 91%
+Raw ADC Value: 466
+Soil Moisture: 91%
+Raw ADC Value: 467
+Soil Moisture: 91%
+Raw ADC Value: 451
+Soil Moisture: 92%
+Raw ADC Value: 493
+Soil Moisture: 90%
+Raw ADC Value: 485
+Soil Moisture: 90%
+Raw ADC Value: 467
+Soil Moisture: 91%
+Raw ADC Value: 463
+Soil Moisture: 91%
+[0;32mI (77920) WebServer: Custom button pressed from web interface![0m
+Manually starting pump...
+Turning on the water pump...
+Raw ADC Value: 565
+Soil Moisture: 86%
+Raw ADC Value: 486
+Soil Moisture: 90%
+[0;32mI (83940) WebServer: Custom button pressed from web interface![0m
+Manually starting pump...
+Turning on the water pump...
+Raw ADC Value: 503
+Soil Moisture: 89%
+Raw ADC Value: 485
+Soil Moisture: 90%
+Raw ADC Value: 483
+Soil Moisture: 90%
+Raw ADC Value: 480
+Soil Moisture: 91%
+Raw ADC Value: 487
+Soil Moisture: 90%
+Raw ADC Value: 483
+Soil Moisture: 90%
+Raw ADC Value: 470
+Soil Moisture: 91%
+Raw ADC Value: 475
+Soil Moisture: 91%
+Raw ADC Value: 486
+Soil Moisture: 90%
+Raw ADC Value: 480
+Soil Moisture: 91%
+Raw ADC Value: 474
+Soil Moisture: 91%
+Raw ADC Value: 491
+Soil Moisture: 90%
+Raw ADC Value: 469
+Soil Moisture: 91%
+Raw ADC Value: 453
+Soil Moisture: 92%
+Raw ADC Value: 482
+Soil Moisture: 90%
+Raw ADC Value: 475
+Soil Moisture: 91%
+[0;32mI (134740) WebServer: Custom button pressed from web interface![0m
+Raw ADC Value: 465
+Soil Moisture: 91%
+Manually starting pump...
+Turning on the water pump...
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 458
+Soil Moisture: 92%
+Raw ADC Value: 478
+Soil Moisture: 91%
+[0;32mI (153690) WebServer: Custom button pressed from web interface![0m
+Raw ADC Value: 471
+Soil Moisture: 91%
+Manually starting pump...
+Turning on the water pump...
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 464
+Soil Moisture: 91%
+Raw ADC Value: 472
+Soil Moisture: 91%
+Raw ADC Value: 482
+Soil Moisture: 90%
+Raw ADC Value: 469
+Soil Moisture: 91%
+Raw ADC Value: 464
+Soil Moisture: 91%
+Raw ADC Value: 471
+Soil Moisture: 91%

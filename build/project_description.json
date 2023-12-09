@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ibaum",
-    "project_version":    "039a140-dirty",
+    "project_version":    "293893e-dirty",
     "project_path":       "C:/Users/Elmou/Desktop/ibaum",
     "idf_path":           "C:/Users/Elmou/esp/esp-idf",
     "build_dir":          "C:/Users/Elmou/Desktop/ibaum/build",

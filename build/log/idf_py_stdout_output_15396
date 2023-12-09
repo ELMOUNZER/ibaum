@@ -1,0 +1,620 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  9 2023 22:03:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24df0h (151024) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00034e18 vaddr=3ffb0000 size=03c08h ( 15368) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038a28 vaddr=40080000 size=075f0h ( 30192) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b2d8h (570072) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb300 vaddr=400875f0 size=0f030h ( 61488) load[0m
+[0;32mI (405) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (416) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) cpu_start: Application information:[0m
+[0;32mI (428) cpu_start: Project name:     ibaum[0m
+[0;32mI (433) cpu_start: App version:      293893e-dirty[0m
+[0;32mI (438) cpu_start: Compile time:     Dec  9 2023 22:02:20[0m
+[0;32mI (444) cpu_start: ELF file SHA256:  7124e2c7f...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB7D40 len 000282C0 (160 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40096620 len 000099E0 (38 KiB): IRAM[0m
+[0;32mI (510) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (517) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (550) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (550) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (610) wifi:wifi driver task: 3ffbfdb4, prio:23, stack:6656, core=0
+I (630) wifi:wifi firmware version: 639ccf2
+I (630) wifi:wifi certification version: v7.0
+I (630) wifi:config NVS flash: enabled
+I (630) wifi:config nano formating: disabled
+I (630) wifi:Init data frame dynamic rx buffer num: 32
+I (640) wifi:Init static rx mgmt buffer num: 5
+I (640) wifi:Init management short buffer num: 32
+I (650) wifi:Init dynamic tx buffer num: 32
+I (650) wifi:Init static rx buffer size: 1600
+I (650) wifi:Init static rx buffer num: 10
+I (660) wifi:Init dynamic rx buffer num: 32
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (680) wifi_init: tcp tx win: 5760[0m
+[0;32mI (680) wifi_init: tcp rx win: 5760[0m
+[0;32mI (680) wifi_init: tcp mss: 1440[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (700) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (790) wifi:mode : sta (08:3a:f2:ba:43:e0)
+I (790) wifi:enable tsf
+WIFI CONNECTING....
+wifi_init_softap finished. SSID:O2  password:T7YUCVBACHPA2YA6I (800) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (800) wifi:state: init -> auth (b0)
+[0;32mI (810) main_task: Returned from app_main()[0m
+I (810) wifi:state: auth -> assoc (0)
+I (820) wifi:Association refused temporarily, comeback time 1201 (TUs)
+I (2050) wifi:state: assoc -> assoc (0)
+I (2060) wifi:state: assoc -> init (6c0)
+I (2060) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+WiFi lost connection
+Retrying to Connect...
+Raw ADC Value: 521
+Soil Moisture: 88%
+WiFi lost connection
+Retrying to Connect...
+I (4480) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (4480) wifi:state: init -> auth (b0)
+I (4490) wifi:state: auth -> assoc (0)
+I (4490) wifi:state: assoc -> run (10)
+I (4500) wifi:connected with O2, aid = 33, channel 10, BW20, bssid = b0:ea:bc:6c:8c:0b
+I (4510) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (4510) wifi:pm start, type: 1
+
+I (4510) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+WiFi CONNECTED
+I (4540) wifi:dp: 5, bi: 102400, li: 5, scale listen interval from 307200 us to 512000 us
+I (4540) wifi:AP's beacon interval = 102400 us, DTIM period = 5
+Raw ADC Value: 544
+Soil Moisture: 87%
+[0;32mI (7020) esp_netif_handlers: sta ip: 192.168.1.165, mask: 255.255.255.0, gw: 192.168.1.1[0m
+Wifi got IP...
+
+Raw ADC Value: 528
+Soil Moisture: 88%
+Raw ADC Value: 525
+Soil Moisture: 88%
+Raw ADC Value: 541
+Soil Moisture: 87%
+Raw ADC Value: 511
+Soil Moisture: 89%
+Raw ADC Value: 541
+Soil Moisture: 87%
+Raw ADC Value: 508
+Soil Moisture: 89%
+Raw ADC Value: 531
+Soil Moisture: 88%
+Raw ADC Value: 511
+Soil Moisture: 89%
+Raw ADC Value: 531
+Raw ADC Value: 530
+Soil Moisture: 88%
+[0;33mW (33220) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (33220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+I (33260) wifi:<ba-add>idx:0 (ifx:0, b0:ea:bc:6c:8c:0b), tid:0, ssn:53, winSize:64
+[0;33mW (34790) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (34790) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (34810) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (34810) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 523
+Soil Moisture: 88%
+[0;33mW (36330) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (36330) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (37840) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (37840) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (37870) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (37870) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 498
+Soil Moisture: 90%
+[0;33mW (38880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (38880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (39890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (39890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (40930) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (40930) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (40940) WebServer: Custom button pressed from web interface![0m
+Raw ADC Value: 542
+Soil Moisture: 87%
+Manually starting pump...
+Turning on the water pump...
+Turning on the water pump...
+The soil is dry. Pumping water...
+[0;33mW (41930) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (41930) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (42960) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (42960) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (43990) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (43990) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (45520) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (45520) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (47050) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (47050) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (47090) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (47090) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (47570) WebServer: Stop Pump button pressed from web interface![0m
+Turning off the water pump...
+[0;33mW (48070) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (48070) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (50670) WebServer: Custom button pressed from web interface![0m
+Manually starting pump...
+Turning on the water pump...
+Turning off the water pump...
+Water pump is off.
+[0;32mI (54730) WebServer: Custom button pressed from web interface![0m
+Raw ADC Value: 529
+Soil Moisture: 88%
+Turning on the water pump...
+Manually starting pump...
+The soil is dry. Pumping water...
+Turning on the water pump...
+[0;33mW (55240) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55240) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55260) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55260) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55300) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55300) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55370) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55370) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55420) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55420) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55470) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55470) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (55540) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (55540) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (56280) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (56280) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (57800) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (57800) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (57830) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (57830) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (58320) WebServer: Stop Pump button pressed from web interface![0m
+Turning off the water pump...
+[0;33mW (58820) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (58820) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (59870) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (59870) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (60810) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (60810) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (61920) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (61920) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (62940) WebServer: Stop Pump button pressed from web interface![0m
+Turning off the water pump...
+[0;33mW (63960) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (63960) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (64000) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (64000) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Turning off the water pump...
+Water pump is off.
+[0;33mW (64970) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (64970) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 545
+Soil Moisture: 87%
+[0;33mW (68550) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (68550) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (68590) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (68590) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (68640) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (68640) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (69070) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (69070) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (70600) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (70600) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 530
+Soil Moisture: 88%
+[0;33mW (71130) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (71130) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (72140) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (72140) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 594
+Soil Moisture: 85%
+[0;33mW (74190) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (74190) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (74240) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (74240) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (75210) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (75220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (76230) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (76230) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 533
+Soil Moisture: 88%
+[0;33mW (77270) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (77270) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (78800) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (78800) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (78830) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (78830) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 528
+Soil Moisture: 88%
+[0;33mW (80340) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (80340) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (80840) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (80840) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (81880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (81880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 1017
+Soil Moisture: 64%
+[0;33mW (82900) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (82900) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (83920) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (83920) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (84970) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (84970) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 1051
+Soil Moisture: 62%
+[0;33mW (85980) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (85980) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (87010) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (87010) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (88020) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (88020) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 1060
+Soil Moisture: 62%
+Raw ADC Value: 1053
+[0;33mW (89040) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (89040) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (90570) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (90570) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (91600) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (91600) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 1071
+Soil Moisture: 61%
+[0;33mW (93710) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (93710) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (93750) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (93750) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (94680) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (94680) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 1076
+Soil Moisture: 61%
+Raw ADC Value: 2241
+Soil Moisture: 2%
+Turning on the water pump...
+The soil is dry. Pumping water...
+[0;33mW (99270) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (99270) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (99310) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (99310) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (99380) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (99380) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (99410) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (99410) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (99440) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (99450) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (100810) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (100810) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (101840) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (101840) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (102890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (102890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (103890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (103890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (105420) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (105420) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (105470) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (105470) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Turning off the water pump...
+Water pump is off.
+[0;33mW (107990) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (107990) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (108010) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (108010) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (108500) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (108500) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (109530) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (109530) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (110550) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (110550) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2291
+Soil Moisture: 0%
+[0;33mW (111610) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (111610) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (112590) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (112590) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2301
+Soil Moisture: 0%
+[0;33mW (114670) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (114670) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (114700) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (114700) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (115700) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (115700) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2276
+[0;33mW (116720) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (116720) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2302
+Soil Moisture: 0%
+[0;33mW (118220) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (118220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (119270) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (119270) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2357
+Soil Moisture: -2%
+[0;33mW (120280) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (120280) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (121300) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (121300) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (122340) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (122350) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2293
+Soil Moisture: 0%
+[0;33mW (124380) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (124380) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (124410) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (124410) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2294
+Soil Moisture: 0%
+Raw ADC Value: 2283
+[0;33mW (125890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (125890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (127950) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (127950) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (128460) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (128460) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2277
+Soil Moisture: 1%
+[0;33mW (129490) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (129490) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (130530) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (130530) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (131580) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (131580) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 2303
+Soil Moisture: 0%
+[0;33mW (133590) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (133590) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (133620) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (133620) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 852
+Soil Moisture: 72%
+Raw ADC Value: 877
+Soil Moisture: 71%
+Raw ADC Value: 853
+Raw ADC Value: 831
+Soil Moisture: 73%
+[0;33mW (141420) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (141420) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (142820) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (142820) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 850
+Soil Moisture: 72%
+[0;33mW (143830) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (143830) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (144880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (144880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (145900) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (145900) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 794
+Soil Moisture: 75%
+[0;33mW (146890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (146890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (147980) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (147980) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 814
+Soil Moisture: 74%
+[0;33mW (152020) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (152020) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (152080) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (152080) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (152120) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (152120) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (152170) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (152170) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (152190) WebServer: Custom button pressed from web interface![0m
+Raw ADC Value: 791
+Soil Moisture: 75%
+Manually starting pump...
+Turning on the water pump...
+Turning on the water pump...
+The soil is dry. Pumping water...
+[0;33mW (153440) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (153440) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (154070) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (154070) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (155080) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (155090) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (157150) WebServer: Stop Pump button pressed from web interface![0m
+Turning off the water pump...
+[0;33mW (157220) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (157220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (157290) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (157290) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (158180) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (158180) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (158730) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (158730) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (161230) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (161230) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (161780) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (161780) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (161880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (161880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 798
+Soil Moisture: 75%
+[0;33mW (165850) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (165850) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (165920) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (165920) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (165990) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (165990) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (166040) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (166040) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (166870) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (166870) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (167900) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (167910) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 794
+Soil Moisture: 75%
+[0;33mW (168920) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (168920) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (169940) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (169940) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (171010) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (171010) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 793
+Soil Moisture: 75%
+[0;33mW (171990) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (171990) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (173000) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (173000) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (174040) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (174040) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 791
+Soil Moisture: 75%
+[0;33mW (175050) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (175050) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (176080) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (176090) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (177100) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (177100) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 805
+Soil Moisture: 74%
+[0;33mW (180800) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (180800) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 787
+Soil Moisture: 75%
+[0;33mW (183760) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (183770) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (183790) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (183790) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 805
+Soil Moisture: 74%
+[0;33mW (185300) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (185300) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (185810) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (185810) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 794
+Soil Moisture: 75%
+[0;33mW (186830) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (186830) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (187880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (187880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (188890) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (188890) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 767
+Soil Moisture: 76%
+[0;33mW (189920) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (189920) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (190940) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (190940) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (191960) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (191960) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 786
+Soil Moisture: 75%
+[0;33mW (193000) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (193000) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (194000) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (194000) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (195030) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (195030) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 790
+Soil Moisture: 75%
+[0;33mW (196040) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (196040) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (197090) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (197090) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (198090) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (198090) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 816
+Soil Moisture: 74%
+[0;33mW (199130) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (199130) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (200140) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (200140) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (201180) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (201180) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 803
+Soil Moisture: 74%
+[0;33mW (202220) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (202220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (203220) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (203230) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (204250) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (204250) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 789
+Soil Moisture: 75%
+[0;33mW (205280) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (205280) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (206310) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (206310) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (207310) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (207310) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 797
+Soil Moisture: 75%
+[0;33mW (207830) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (207830) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (208880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (208880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (209880) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (209880) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 797
+Soil Moisture: 75%
+[0;33mW (210910) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (210910) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (211930) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (211930) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (212950) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (212950) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 784
+Soil Moisture: 75%
+[0;33mW (213980) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (213990) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (215000) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (215000) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (216050) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (216050) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 802
+Soil Moisture: 74%
+[0;33mW (217040) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (217040) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (218070) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (218070) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (219100) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (219100) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+Raw ADC Value: 802
+Soil Moisture: 74%
+[0;33mW (222210) httpd_uri: httpd_uri: URI '/get-moisture' not found[0m
+[0;33mW (222220) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
