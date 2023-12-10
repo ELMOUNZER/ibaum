@@ -5,8 +5,10 @@
 #include "freertos/task.h"
 #include "driver/gpio.h"
 
-#define BLINK_GPIO 2
+#define LED_GPIO_PIN 2
+#define BLINK_INTERVAL_MS 100
 
-void blink_task(void *pvParameter);
+void control_Led(bool turnOn);
+void blinkLed(int blinkCount);
 
 #endif

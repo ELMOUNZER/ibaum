@@ -1,2 +1,4 @@
-idf_component_register(SRCS "blink.h" "blink.c" "main.c"
+set(SOURCES "blink.c" "soil_sensor.c" "main.c")
+
+idf_component_register(SRCS ${SOURCES}
                     INCLUDE_DIRS ".")
