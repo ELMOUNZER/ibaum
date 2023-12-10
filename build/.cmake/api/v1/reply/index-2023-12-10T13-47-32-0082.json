@@ -1,0 +1,31 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Users/Elmou/esp/tools/cmake/3.24.0/bin/cmake.exe",
+			"cpack" : "C:/Users/Elmou/esp/tools/cmake/3.24.0/bin/cpack.exe",
+			"ctest" : "C:/Users/Elmou/esp/tools/cmake/3.24.0/bin/ctest.exe",
+			"root" : "C:/Users/Elmou/esp/tools/cmake/3.24.0/share/cmake-3.24"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 24,
+			"patch" : 0,
+			"string" : "3.24.0",
+			"suffix" : ""
+		}
+	},
+	"objects" : [],
+	"reply" : 
+	{
+		"client-vscode" : {}
+	}
+}

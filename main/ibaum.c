@@ -210,7 +210,7 @@ void app_main(void) {
     ssd1306_contrast(&dev, 0xff);
     char moisture_text[16];
     sprintf(moisture_text, "M:%d%%", getSoilMoisture());
-    ssd1306_display_text(&dev, center, moisture_text, 5, false);
+    ssd1306_display_text_x3(&dev, center, moisture_text, 5, false);
 
     vTaskDelay(3000 / portTICK_PERIOD_MS);
 

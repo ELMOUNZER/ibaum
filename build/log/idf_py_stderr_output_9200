@@ -1,0 +1,615 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.3.3 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d596a: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:172 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x400d5967: ssd1306_clear_screen at C:/Users/Elmou/Desktop/ibaum/components/ssd1306.c:173
+[0m
+[0;33m0x400d5669: displayTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:77
+[0m
+[0;33m0x400d5721: communicationTask at C:/Users/Elmou/Desktop/ibaum/main/ibaum.c:154
+[0m
+[0;33m0x40087a91: vPortTaskWrapper at C:/Users/Elmou/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
