@@ -1,0 +1,40 @@
+void soilTask(void *pvParameter) {
+    int MOISTURE_THRESHOLD = 55;
+    int PUMP_INTERVAL_SECONDS = 60; // Adjust this interval as needed
+
+    // Turn on the LED initially
+    control_Led(true);
+
+    while (1) {
+        // Placeholder for reading soil moisture
+        moisture = getSoilMoisture();
+        printf("Soil Moisture: %d%%\n", moisture);
+
+        // Check if the moisture is below the threshold or the button was pressed
+        if (moisture < MOISTURE_THRESHOLD || manualPumpStart) {
+            // Turn on the water pump
+            controlWaterPump(true);
+
+            // Print a message indicating water pumping
+            printf("The soil is dry. Pumping water...\n");
+
+            // Wait for the specified duration
+            vTaskDelay(pdMS_TO_TICKS(PUMP_DURATION_SECONDS * 1000));
+
+            // Turn off the water pump after the specified duration
+            controlWaterPump(false);
+
+            // Print a message indicating pump is off
+            printf("Water pump is off.\n");
+
+            // Reset the manual pump start flag
+            manualPumpStart = false;
+        } else {
+            // Print a message indicating the soil is wet
+            printf("The soil is wet. No need to water.\n");
+        }
+
+        // Wait for the next iteration
+        vTaskDelay(pdMS_TO_TICKS(PUMP_INTERVAL_SECONDS * 1000));
+    }
+}

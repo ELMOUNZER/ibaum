@@ -13,7 +13,17 @@ SemaphoreHandle_t xButtonSemaphore;  // Declare the semaphore
 
 void app_main() {
 
-    vTaskDelay(pdMS_TO_TICKS(1000));
+        // Add a longer delay for stability during boot-up
+    vTaskDelay(pdMS_TO_TICKS(20));
+
+    // Set initial state of the GPIO pin
+    gpio_config_t io_conf = {
+        .pin_bit_mask = (1ULL << RELAY_GPIO_PIN),
+        .mode = GPIO_MODE_OUTPUT,
+    };
+    gpio_config(&io_conf);
+    gpio_set_level(RELAY_GPIO_PIN, 0);  // Ensure the pump is off initially
+
 
     gpio_config_t led_io_conf = {
             .pin_bit_mask = (1ULL << LED_GPIO_PIN),
@@ -23,11 +33,7 @@ void app_main() {
             .pin_bit_mask = (1ULL << RELAY_GPIO_PIN),
             .mode = GPIO_MODE_OUTPUT,
     };
-     gpio_config_t io_conf = {
-        .pin_bit_mask = (1ULL << RELAY_GPIO_PIN),
-        .mode = GPIO_MODE_OUTPUT,
-    };
-    gpio_config(&io_conf);
+    
     gpio_config(&led_io_conf);
     gpio_config(&relay_io_conf);
 
@@ -47,7 +53,6 @@ void app_main() {
 
     // Call the WiFi connection function
     // wifi_connection();  // Commented out as it's not defined
-
 
     // Create tasks
     // xTaskCreate(&web_server_task, "web_server_task", 4096, NULL, 5, NULL);  // Commented out as it's not defined

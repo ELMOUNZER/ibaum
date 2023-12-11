@@ -6,6 +6,8 @@
 #include "freertos/portmacro.h"
 #include "freertos/timers.h"
 #include "blink.h"
+#include "esp_timer.h"
+
 
 
 // Pin Definitions
@@ -14,7 +16,7 @@
 
 // Soil Moisture Sensor Configuration
 #define SOIL_SENSOR_ADC_CHANNEL ADC1_CHANNEL_7
-#define PUMP_DURATION_SECONDS 5
+#define PUMP_DURATION_SECONDS 10
 #define BLINK_INTERVAL_MS 100
 #define WET_LEVEL 2300
 #define DRY_LEVEL 300
@@ -75,7 +77,7 @@ void soilTask(void *pvParameter) {
     int MOISTURE_THRESHOLD = 55;
 
     // Blink the LED rapidly to indicate startup
-    //blinkLed(10);  // You can adjust the blink count for a more noticeable startup blink
+    // blinkLed(10);  // You can adjust the blink count for a more noticeable startup blink
 
     // Turn on the LED initially
     control_Led(true);
@@ -96,12 +98,12 @@ void soilTask(void *pvParameter) {
             // Print a message indicating water pumping
             printf("The soil is dry. Pumping water...\n");
 
-            // Turn off the LED when the pump is active
-            double blinkCount = PUMP_DURATION_SECONDS * 1000 / BLINK_INTERVAL_MS;
-            blinkLed(blinkCount);
-
-            // Wait for the specified duration
-            vTaskDelay(pdMS_TO_TICKS(PUMP_DURATION_SECONDS * 1000));
+            // Blink the LED while the pump is active
+            double pumpStartTime = esp_timer_get_time() / 1000;  // Get current time in milliseconds
+            while (pumpActive && (esp_timer_get_time() / 1000 - pumpStartTime) <= PUMP_DURATION_SECONDS * 1000) {
+                blinkLed(true);
+                vTaskDelay(pdMS_TO_TICKS(BLINK_INTERVAL_MS));
+            }
 
             // Turn off the water pump after the specified duration
             controlWaterPump(false);
@@ -120,6 +122,6 @@ void soilTask(void *pvParameter) {
         }
 
         // Wait for the next iteration
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        vTaskDelay(pdMS_TO_TICKS(5000));
     }
 }

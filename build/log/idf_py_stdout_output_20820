@@ -1,0 +1,196 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 10 2023 23:12:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ced4h ( 52948) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001cefc vaddr=3ffb0000 size=02298h (  8856) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001f19c vaddr=40080000 size=00e7ch (  3708) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=182fch ( 99068) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00038324 vaddr=40080e7c size=0c014h ( 49172) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (196) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     main[0m
+[0;32mI (224) cpu_start: App version:      95b5b22-dirty[0m
+[0;32mI (230) cpu_start: Compile time:     Dec 10 2023 23:51:26[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  bbd4a26b0...[0m
+[0;32mI (241) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa[0m
+[0;32mI (247) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (252) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2BB0 len 0002D450 (181 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008CE90 len 00013170 (76 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (361) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (361) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (361) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) main_task: Returned from app_main()[0m
+Raw ADC Value: 1191
+Soil Moisture: 55%
+Raw ADC Value: 1195
+Soil Moisture: 55%
+Raw ADC Value: 1181
+Soil Moisture: 55%
+Raw ADC Value: 1670
+Soil Moisture: 31%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1191
+Soil Moisture: 55%
+Raw ADC Value: 1190
+Soil Moisture: 55%
+Raw ADC Value: 1209
+Soil Moisture: 54%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1137
+Soil Moisture: 58%
+Raw ADC Value: 1167
+Soil Moisture: 56%
+Raw ADC Value: 1168
+Soil Moisture: 56%
+Raw ADC Value: 1170
+Soil Moisture: 56%
+Raw ADC Value: 1205
+Soil Moisture: 54%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1171
+Soil Moisture: 56%
+Raw ADC Value: 1201
+Soil Moisture: 54%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1213
+Soil Moisture: 54%
+Raw ADC Value: 1204
+Soil Moisture: 54%
+Raw ADC Value: 1218
+Soil Moisture: 54%
+Raw ADC Value: 1200
+Soil Moisture: 55%
+Raw ADC Value: 1203
+Soil Moisture: 54%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1200
+Soil Moisture: 55%
+Raw ADC Value: 1211
+Soil Moisture: 54%
+Turning on the water pump...
+The soil is dry. Pumping water...
+Turning off the water pump...
+Water pump is off.
+Raw ADC Value: 1264
+Soil Moisture: 51%
+Raw ADC Value: 1281
+Soil Moisture: 50%
+Raw ADC Value: 1273
+Soil Moisture: 51%
+Raw ADC Value: 606
+Soil Moisture: 84%
+Raw ADC Value: 630
+Soil Moisture: 83%
+Raw ADC Value: 614
+Soil Moisture: 84%
+Raw ADC Value: 627
+Soil Moisture: 83%
+Raw ADC Value: 631
+Soil Moisture: 83%
+Raw ADC Value: 637
+Soil Moisture: 83%
+Raw ADC Value: 622
+Soil Moisture: 83%
+Raw ADC Value: 643
+Soil Moisture: 82%
+Raw ADC Value: 642
+Soil Moisture: 82%
+Raw ADC Value: 658
+Soil Moisture: 82%
+Raw ADC Value: 662
+Soil Moisture: 81%
+Raw ADC Value: 646
+Soil Moisture: 82%
+Raw ADC Value: 662
+Soil Moisture: 81%
+Raw ADC Value: 651
+Soil Moisture: 82%
+Raw ADC Value: 642
+Soil Moisture: 82%
+Raw ADC Value: 646
+Soil Moisture: 82%
+Raw ADC Value: 649
+Soil Moisture: 82%
+Raw ADC Value: 635
+Soil Moisture: 83%
+Raw ADC Value: 575
+Soil Moisture: 86%
+Raw ADC Value: 631
+Soil Moisture: 83%
+Raw ADC Value: 652
+Soil Moisture: 82%
+Raw ADC Value: 651
+Soil Moisture: 82%
+Raw ADC Value: 640
+Soil Moisture: 83%
+Raw ADC Value: 652
+Soil Moisture: 82%
+Raw ADC Value: 642
+Soil Moisture: 82%
+Raw ADC Value: 638
+Soil Moisture: 83%
+Raw ADC Value: 639
+Soil Moisture: 83%
+Raw ADC Value: 642
+Soil Moisture: 82%
+Raw ADC Value: 637
+Soil Moisture: 83%
+Raw ADC Value: 644
+Soil Moisture: 82%
+Raw ADC Value: 651
+Soil Moisture: 82%
+Raw ADC Value: 646
+Soil Moisture: 82%
